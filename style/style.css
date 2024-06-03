@@ -1,0 +1,199 @@
+
+/*Body css*/
+
+body {
+    margin: 2px;
+    font-family: Arial, sans-serif;
+}
+
+
+/* ici le css pour le contenaire de flex box, img et le titre des images*/
+
+#contenaire{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+
+}
+
+.eleImage {
+    background-color: rgb(58, 190, 110);
+    width: 30%;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 3px 3px rgb(42, 50, 49);
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding: 5px 5px;
+}
+
+
+.eleImage:hover {
+    background-color:rgb(198, 212, 175);
+}
+
+img {
+    width : 100%;
+    height : auto;
+    object-fit : cover; 
+    border-radius : 20px;
+}
+
+.eleImage h1{
+    text-align: center;
+}
+
+/*
+Ici css pour la description des paragraphes des images
+*/
+
+.description {
+    text-align: center;
+    padding: 10px;
+}
+
+.description h1, .description h2 {
+    margin: 10px 0;
+}
+
+
+/* css pour footer*/
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5px;
+    background-color: #333;
+}
+.footerFlex{
+    display: flexbox;
+    justify-content:space-between ;
+    flex-direction: column;
+    padding: 5px 5px;
+    text-align: center;
+    color: white; 
+
+}
+.footerFlex a:hover{
+    color: green;
+
+}
+.footerFlex a {
+    color: white;
+}
+
+
+
+/* css pour monter et desecendre*/
+.scrollBtn {
+    position: fixed;
+    right: 20px;
+    padding: 10px 15px;
+    font-size: 18px;
+    background-color: #232F3E;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+#scrollTopBtn {
+    bottom: 80px; /* Positionné au-dessus du bouton de bas de page */
+}
+
+#scrollBottomBtn {
+    bottom: 20px;
+}
+
+.scrollBtn:hover {
+    background-color: #FF9900;
+}
+
+/* insertion police fire et bride*/
+
+@font-face {
+    font-family: "Fire";
+    src: url("../fonts/Blazed.ttf") format('truetype');
+}
+
+
+@font-face {
+    font-family: "bride";
+    src: url("../fonts/Hello\ Bride\ Script.ttf") format('truetype');
+}
+
+
+/* css pour h1 section et articles*/
+.enteteH1{
+    margin-top:10px;
+    background-color:black;
+    color: white;
+    font-size: 3em;
+    font-family: "Fire";
+   opacity: 0.5;
+   border-width: 2px;
+   border-color: white;
+   border-style: groove;
+   border-radius: 80px 15px 80px 15px;
+   width: 100%;
+   box-shadow: 2px 2px 0px black inset;
+   box-shadow: 5px 5px 0px black;
+   text-align: center;
+}
+h1:hover{
+    color: yellow;
+}
+
+
+
+/* css pour h1 des images*/
+.eleImage h2{
+    text-transform:uppercase;
+    font-weight: bold;
+
+
+    
+}
+.eleImage h3{
+    text-decoration: underline;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.eleImage p{
+    text-align: justify;
+    
+}
+/* css pour les medias*/
+
+@media screen and (max-width: 1200px)
+{
+    .eleImage {
+        width : 45%;
+    }
+}
+
+@media screen and (max-width: 700px)
+{
+    .eleImage {
+        width : 90%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
