@@ -4,7 +4,9 @@
 body {
     margin: 2px;
     font-family: Arial, sans-serif;
+    
 }
+
 
 
 /* ici le css pour le contenaire de flex box, img et le titre des images*/
@@ -129,7 +131,7 @@ Ici css pour la description des paragraphes des images
 
 /* css pour h1 section et articles*/
 .enteteH1{
-    margin-top:10px;
+    margin:10px;
     background-color:black;
     color: white;
     font-size: 3em;
