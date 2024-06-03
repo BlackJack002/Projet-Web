@@ -1,6 +1,6 @@
 
 /*
-js pour menu
+js pour menu de navigation
 */
 
 document.addEventListener('DOMContentLoaded', () => {
